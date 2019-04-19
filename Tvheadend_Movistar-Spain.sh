@@ -37,7 +37,7 @@ SERVICE_ERROR=false
 
 
 LOCAL_SCRIPT_VERSION="20180819"
-REMOTE_SCRIPT_VERSION="$(curl -fLs https://github.com/clanl3mw/Tvheadend_Movistar-Spain/raw/master/version.txt | grep ^"SCRIPT_VERSION" | cut -d'=' -f2)" 2>>Tvheadend_Movistar-Spain.log
+REMOTE_SCRIPT_VERSION="$(curl -fLs https://github.com/manuelrn/Tvheadend_Movistar-Spain/raw/master/version.txt | grep ^"SCRIPT_VERSION" | cut -d'=' -f2)" 2>>Tvheadend_Movistar-Spain.log
 URL_SCRIPT="https://github.com/clanl3mw/Tvheadend_Movistar-Spain/raw/master/Tvheadend_Movistar-Spain.sh" 2>>Tvheadend_Movistar-Spain.log
 
 if [ $LOCAL_SCRIPT_VERSION -lt $REMOTE_SCRIPT_VERSION ]; then
@@ -270,7 +270,7 @@ else
 fi
 
 
-REMOTE_LIST_VERSION="$(curl -fLs https://github.com/clanl3mw/Tvheadend_Movistar-Spain/raw/master/version.txt | grep ^"LIST_VERSION" | cut -d'=' -f2)" 2>>Tvheadend_Movistar-Spain.log
+REMOTE_LIST_VERSION="$(curl -fLs https://github.com/manuelrn/Tvheadend_Movistar-Spain/raw/master/version.txt | grep ^"LIST_VERSION" | cut -d'=' -f2)" 2>>Tvheadend_Movistar-Spain.log
 URL_LIST="https://github.com/clanl3mw/Tvheadend_Movistar-Spain/raw/master/files/Configuracion_Tvheadend_$REMOTE_LIST_VERSION.tar.xz" 2>>Tvheadend_Movistar-Spain.log
 
 REMOTE_GRABBER_VERSION="$(curl -fLs https://github.com/clanl3mw/Tvheadend_Movistar-Spain/raw/master/version.txt | grep ^"GRABBER_VERSION" | cut -d'=' -f2)" 2>>Tvheadend_Movistar-Spain.log
