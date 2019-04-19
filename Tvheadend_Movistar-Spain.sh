@@ -271,7 +271,7 @@ fi
 
 
 REMOTE_LIST_VERSION="$(curl -fLs https://github.com/clanl3mw/Tvheadend_Movistar-Spain/raw/master/version.txt | grep ^"LIST_VERSION" | cut -d'=' -f2)" 2>>Tvheadend_Movistar-Spain.log
-URL_LIST="https://github.com/clanl3mw/Tvheadend_Movistar-Spain/raw/master/files/Configuracion_Tvheadend_$REMOTE_LIST_VERSIONtar.xz" 2>>Tvheadend_Movistar-Spain.log
+URL_LIST="https://github.com/clanl3mw/Tvheadend_Movistar-Spain/raw/master/files/Configuracion_Tvheadend_$REMOTE_LIST_VERSION.tar.xz" 2>>Tvheadend_Movistar-Spain.log
 
 REMOTE_GRABBER_VERSION="$(curl -fLs https://github.com/clanl3mw/Tvheadend_Movistar-Spain/raw/master/version.txt | grep ^"GRABBER_VERSION" | cut -d'=' -f2)" 2>>Tvheadend_Movistar-Spain.log
 URL_GRABBER="https://github.com/clanl3mw/Tvheadend_Movistar-Spain/raw/master/files/tv_grab_movistar-spain" 2>>Tvheadend_Movistar-Spain.log
